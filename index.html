@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Student Grade Calculator</title>
+
+    <style>
+        .container {
+            border: dashed red 7px;
+            background-color: olive;
+            color: burlywood;
+            font-family: Broadway;
+            font-size: 30px;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+        }
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Grade Calculator</h2>
+        <form>
+            <input type="text" id="inputText" placeholder="Enter your full name here">
+            <input type="number" id="inputMathGrade" placeholder="Enter your math grade here">
+            <input type="number" id="inputScienceGrade" placeholder="Enter your science grade here">
+            <input type="number" id="inputEnglishGrade" placeholder="Enter your english grade here">
+            <input type="number" id="inputSocialStudiesGrade" placeholder="Enter your social studies grade here">
+            <input type="number" id="inputMusicGrade" placeholder="Enter your music grade here">
+            <input type="number" id="inputPEGrade" placeholder="Enter your PE grade here">
+
+            <button type="button" value="Submit" py-click="getting_gwa">Submit</button>
+
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
